@@ -17,7 +17,6 @@ const App = () => {
         <BookProvider>
           <BrowserRouter>
             <Routes>
-              <Route path="/" Component={() => <Navigate to="/books" />} />
               <Route path="/books" Component={Main} />
               <Route path="/books/:id" Component={BookDetails} />
               <Route path="*" Component={() => <Navigate to="/books" />} />

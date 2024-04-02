@@ -16,7 +16,7 @@ const BookDetails = () => {
   const navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const { books, loading } = useBookContext();
-  console.log(id, books);
+
   const book = books.find(book => book._id === id);
 
   if (loading) {
