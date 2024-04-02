@@ -1,0 +1,21 @@
+{
+  "name": "bookstore",
+  "version": "0.1.0",
+  "description": "Bookstore project",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm run start",
+    "server-install": "cd server && npm install",
+    "start":"cd client && npm run start",	
+    "client": "cd client && npm start",
+    "client-install": "cd client && npm install",
+    "upgrade" : "npm run server-install && npm run client-install",
+    "dev": "concurrently \"npm run server\" \"npm run start\"",
+    "setup": "npm install && npm run client-install && npm run server-install && npm run dev"
+  },
+  "author": "Samuel Zerbib",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^4.1.0"
+  }
+}

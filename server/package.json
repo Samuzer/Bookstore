@@ -1,0 +1,21 @@
+{
+  "name": "bookstore-server",
+  "version": "0.1.0",
+  "description": "Server for Bookstore project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Samuel Zerbib",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "nodemon": "^1.18.10",
+    "validator": "^10.11.0"
+  }
+}
