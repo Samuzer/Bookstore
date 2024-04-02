@@ -20,7 +20,8 @@ const genreOptions = [
   "Drama",
   "Action",
   "Romance",
-  "Mystery or Horror"
+  "Mystery",
+  "Horror"
 ] as const;
 
 interface AddBookModalProps {
@@ -105,7 +106,8 @@ const AddBookModal = ({ open, onClose }: AddBookModalProps) => {
           label="Genre"
           required
           fullWidth
-          margin="dense">
+          margin="dense"
+          defaultValue="">
           <MenuItem value="">
             <em>None</em>
           </MenuItem>
